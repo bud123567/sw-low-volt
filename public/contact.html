@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Request a Low-Voltage Quote | SW Low Volt</title>
+    <meta
+      name="description"
+      content="Call 443-591-9207 or request a quote for structured cabling, network, security, access-control, or troubleshooting work in Maryland and nearby areas."
+    />
+    <meta
+      name="keywords"
+      content="low voltage quote Maryland, network cabling Ocean City MD, low voltage contractor Glen Burnie, low voltage contractor Pasadena MD"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Request a Low-Voltage Quote | SW Low Volt"
+    />
+    <meta
+      property="og:description"
+      content="Request structured cabling, network, security, access-control, or troubleshooting work in Maryland and nearby areas."
+    />
+    <meta property="og:image" content="/og.jpg" />
+    <link rel="icon" href="/sw-low-volt-logo-1000.png" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand-plate" href="/index.html" aria-label="SW Low Volt home"
+          ><img
+            src="/sw-low-volt-logo-1000.png"
+            width="1000"
+            height="500"
+            alt="SW Low Volt — Networks, Security, Connectivity"
+        /></a>
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a class="nav-link" href="/index.html">Home</a
+          ><a class="nav-link" href="/services.html">Services</a
+          ><a class="nav-link" href="/subcontracting.html">Subcontracting</a
+          ><a class="nav-link" href="/about.html">About</a
+          ><a class="nav-link" href="/contact.html" aria-current="page"
+            >Contact</a
+          >
+        </nav>
+        <div class="header-actions">
+          <a class="header-phone" href="tel:+14435919207">443-591-9207</a
+          ><a class="button button--primary" href="#quote-form"
+            >Request a quote</a
+          >
+        </div>
+        <button
+          class="mobile-menu-button"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="mobile-navigation"
+          aria-expanded="false"
+          data-menu-button
+        >
+          ☰
+        </button>
+      </div>
+      <nav
+        class="mobile-nav"
+        id="mobile-navigation"
+        aria-label="Mobile navigation"
+        data-mobile-nav
+      >
+        <div class="container mobile-nav-inner">
+          <a class="nav-link" href="/index.html">Home</a
+          ><a class="nav-link" href="/services.html">Services</a
+          ><a class="nav-link" href="/subcontracting.html">Subcontracting</a
+          ><a class="nav-link" href="/about.html">About</a
+          ><a class="nav-link" href="/contact.html" aria-current="page"
+            >Contact</a
+          >
+          <div class="mobile-nav-actions">
+            <a class="button button--outline" href="tel:+14435919207"
+              >Call now</a
+            ><a class="button button--primary" href="#quote-form"
+              >Request a quote</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <span class="cable-route" aria-hidden="true"></span>
+        <div class="container page-hero-inner">
+          <p class="eyebrow">Contact / Project intake</p>
+          <h1 class="display-title page-title">Request a Low-Voltage Quote</h1>
+          <p class="page-description">
+            Tell us what needs to be connected, where the work is located, and
+            what timing you are working toward. We will review the details and
+            follow up directly.
+          </p>
+          <div class="page-actions">
+            <a class="button button--primary" href="#quote-form"
+              >Start the quote form ↓</a
+            ><a class="button button--outline" href="tel:+14435919207"
+              >Call 443-591-9207</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--black">
+        <div class="container contact-grid">
+          <aside>
+            <p class="eyebrow">Direct contact</p>
+            <h2 class="section-title">Let’s talk through the scope.</h2>
+            <p class="section-copy section-copy--dark">
+              For urgent service needs or a fast schedule check, calling is the
+              quickest route. For planned work, use the form so we can review
+              the details together.
+            </p>
+            <div class="contact-stack">
+              <div class="contact-block">
+                <span>Phone</span><a href="tel:+14435919207">443-591-9207</a>
+              </div>
+              <div class="contact-block">
+                <span>Email</span
+                ><a href="mailto:calebwelsch83@gmail.com"
+                  >calebwelsch83@gmail.com</a
+                >
+              </div>
+              <div class="contact-block">
+                <span>Service area</span
+                ><strong
+                  >Maryland, Delmarva, Glen Burnie, Pasadena, and surrounding
+                  Pennsylvania areas.</strong
+                >
+              </div>
+            </div>
+            <div class="service-areas" aria-label="Primary service areas">
+              <span class="service-area">Ocean City</span
+              ><span class="service-area">Berlin</span
+              ><span class="service-area">Ocean Pines</span
+              ><span class="service-area">Salisbury</span
+              ><span class="service-area">Glen Burnie</span
+              ><span class="service-area">Pasadena</span
+              ><span class="service-area">Delmarva</span
+              ><span class="service-area">MD / PA</span>
+            </div>
+            <div class="action-row">
+              <a
+                class="button button--outline"
+                href="/subcontracting.html#bid-form"
+                >Invite us to bid →</a
+              >
+            </div>
+          </aside>
+
+          <div class="form-panel">
+            <form
+              class="lead-form"
+              id="quote-form"
+              action="/api/leads"
+              method="post"
+              data-lead-form
+              data-kind="quote"
+              novalidate
+            >
+              <input type="hidden" name="kind" value="quote" />
+              <label class="honeypot" aria-hidden="true"
+                >Website<input
+                  type="text"
+                  name="website"
+                  tabindex="-1"
+                  autocomplete="off"
+              /></label>
+              <div class="form-fields">
+                <div class="form-grid">
+                  <label class="field" for="contact-name"
+                    ><span>Name <b class="required">*</b></span
+                    ><input
+                      id="contact-name"
+                      name="name"
+                      required
+                      autocomplete="name"
+                      aria-describedby="contact-name-error" /><small
+                      class="field-error"
+                      id="contact-name-error"
+                      data-error-for="name"
+                    ></small
+                  ></label>
+                  <label class="field" for="contact-company"
+                    ><span>Company <b class="optional">(optional)</b></span
+                    ><input
+                      id="contact-company"
+                      name="company"
+                      autocomplete="organization"
+                  /></label>
+                  <label class="field" for="contact-phone"
+                    ><span>Phone <b class="required">*</b></span
+                    ><input
+                      id="contact-phone"
+                      name="phone"
+                      type="tel"
+                      inputmode="tel"
+                      required
+                      autocomplete="tel"
+                      aria-describedby="contact-phone-error" /><small
+                      class="field-error"
+                      id="contact-phone-error"
+                      data-error-for="phone"
+                    ></small
+                  ></label>
+                  <label class="field" for="contact-email"
+                    ><span>Email <b class="required">*</b></span
+                    ><input
+                      id="contact-email"
+                      name="email"
+                      type="email"
+                      inputmode="email"
+                      required
+                      autocomplete="email"
+                      aria-describedby="contact-email-error" /><small
+                      class="field-error"
+                      id="contact-email-error"
+                      data-error-for="email"
+                    ></small
+                  ></label>
+                </div>
+                <label class="field" for="contact-address"
+                  ><span
+                    >Project address or location <b class="required">*</b></span
+                  ><input
+                    id="contact-address"
+                    name="projectAddress"
+                    required
+                    autocomplete="street-address"
+                    aria-describedby="contact-address-error" /><small
+                    class="field-error"
+                    id="contact-address-error"
+                    data-error-for="projectAddress"
+                  ></small
+                ></label>
+                <label class="field" for="contact-work"
+                  ><span>Type of work <b class="required">*</b></span
+                  ><select
+                    id="contact-work"
+                    name="workType"
+                    required
+                    aria-describedby="contact-work-error"
+                  >
+                    <option value="">Choose a service</option>
+                    <option value="structured-cabling">
+                      Structured cabling / Cat6
+                    </option>
+                    <option value="network-infrastructure">
+                      Network racks / Wi-Fi cabling
+                    </option>
+                    <option value="security-access">
+                      Security or access cabling
+                    </option>
+                    <option value="commercial-project">
+                      Commercial renovation or new construction
+                    </option>
+                    <option value="service-call">
+                      Service call or troubleshooting
+                    </option>
+                    <option value="other">
+                      Other low-voltage work
+                    </option></select
+                  ><small
+                    class="field-error"
+                    id="contact-work-error"
+                    data-error-for="workType"
+                  ></small
+                ></label>
+                <label class="field" for="contact-details"
+                  ><span>Project details <b class="required">*</b></span
+                  ><textarea
+                    id="contact-details"
+                    name="details"
+                    required
+                    rows="7"
+                    aria-describedby="contact-details-help contact-details-error"
+                    placeholder="Tell us about the space, cable counts, timing, and any plans or site constraints."
+                  ></textarea
+                  ><small class="field-help" id="contact-details-help"
+                    >Include the project timeline and an approximate number of
+                    drops when known.</small
+                  ><small
+                    class="field-error"
+                    id="contact-details-error"
+                    data-error-for="details"
+                  ></small
+                ></label>
+                <fieldset class="field-group">
+                  <legend>Preferred contact method</legend>
+                  <div class="radio-grid">
+                    <label class="radio-option"
+                      ><input
+                        type="radio"
+                        name="preferredContact"
+                        value="phone"
+                        required
+                      />
+                      Phone</label
+                    ><label class="radio-option"
+                      ><input
+                        type="radio"
+                        name="preferredContact"
+                        value="email"
+                        required
+                      />
+                      Email</label
+                    ><label class="radio-option"
+                      ><input
+                        type="radio"
+                        name="preferredContact"
+                        value="either"
+                        required
+                        checked
+                      />
+                      Either works</label
+                    >
+                  </div>
+                  <small
+                    class="field-error"
+                    data-error-for="preferredContact"
+                  ></small>
+                </fieldset>
+                <div class="form-status" role="alert" data-form-status></div>
+                <div
+                  class="progress-wrap"
+                  role="progressbar"
+                  aria-label="Sending request"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                  data-progress-wrap
+                >
+                  <div class="progress-label">
+                    <span>Sending request</span
+                    ><span data-progress-text>0%</span>
+                  </div>
+                  <div class="progress-track">
+                    <div class="progress-bar" data-progress-bar></div>
+                  </div>
+                </div>
+                <div class="form-actions">
+                  <button
+                    class="button button--primary"
+                    type="submit"
+                    data-submit
+                  >
+                    Request a quote →</button
+                  ><button
+                    class="button button--outline"
+                    type="button"
+                    data-cancel
+                  >
+                    Cancel</button
+                  ><small
+                    >Your details are used only to review and respond to this
+                    request.</small
+                  >
+                </div>
+              </div>
+              <div class="success-panel" tabindex="-1" data-success-panel>
+                <span aria-hidden="true">✓</span>
+                <h3>Request received.</h3>
+                <p>
+                  Your project details are in the queue. If the work is
+                  time-sensitive, call 443-591-9207 so we can review the timing
+                  directly.
+                </p>
+                <div class="action-row">
+                  <a class="button button--primary" href="tel:+14435919207"
+                    >Call now</a
+                  ><button
+                    class="button button--outline"
+                    type="button"
+                    data-reset-form
+                  >
+                    Send another request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container split-grid">
+          <div>
+            <p class="eyebrow eyebrow--dark">Before you send</p>
+            <h2 class="section-title">
+              A few details make the first call more useful.
+            </h2>
+          </div>
+          <ul class="checklist">
+            <li>The project address or general service area</li>
+            <li>The type of system or cable work involved</li>
+            <li>Approximate cable counts or device locations</li>
+            <li>Desired start date, bid date, or completion target</li>
+            <li>
+              Any plans, access limits, ceiling conditions, or coordination
+              needs
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="/index.html" aria-label="SW Low Volt home"
+            ><img
+              class="footer-logo"
+              src="/sw-low-volt-logo-1000.png"
+              width="1000"
+              height="500"
+              alt="SW Low Volt — Networks, Security, Connectivity"
+              loading="lazy"
+          /></a>
+          <p class="footer-about">
+            Structured cabling, network infrastructure, security cabling, and
+            connectivity support for commercial, residential, and subcontract
+            projects.
+          </p>
+          <div class="action-row">
+            <a class="button button--primary" href="#quote-form"
+              >Request a quote →</a
+            >
+          </div>
+        </div>
+        <div>
+          <h2 class="footer-title">Key services</h2>
+          <ul class="footer-links">
+            <li>
+              <a href="/services.html#structured-cabling">Structured cabling</a>
+            </li>
+            <li>
+              <a href="/services.html#network-infrastructure"
+                >Network infrastructure</a
+              >
+            </li>
+            <li>
+              <a href="/services.html#security-access"
+                >Security &amp; access cabling</a
+              >
+            </li>
+            <li>
+              <a href="/services.html#commercial-projects"
+                >Commercial projects</a
+              >
+            </li>
+            <li>
+              <a href="/services.html#service-calls"
+                >Service &amp; troubleshooting</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer-title">Contact &amp; coverage</h2>
+          <div class="footer-contact">
+            <a href="tel:+14435919207">443-591-9207</a
+            ><a href="mailto:calebwelsch83@gmail.com"
+              >calebwelsch83@gmail.com</a
+            >
+            <p>
+              Ocean City, Berlin, Ocean Pines, Salisbury, Glen Burnie, Pasadena,
+              Delmarva, and surrounding Maryland and Pennsylvania areas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 SW Low Volt. All rights reserved.</p>
+          <p class="footer-tagline">Networks · Security · Connectivity</p>
+        </div>
+      </div>
+    </footer>
+    <div class="mobile-quote-bar" aria-label="Quick contact">
+      <a
+        class="mobile-call"
+        href="tel:+14435919207"
+        aria-label="Call SW Low Volt at 443-591-9207"
+        >☎</a
+      ><a class="button button--primary" href="#quote-form">Request a quote</a>
+    </div>
+  </body>
+</html>
