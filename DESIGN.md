@@ -4,15 +4,23 @@ name: 'SW Low Volt'
 description: 'A precise rack-elevation visual system for a hands-on Maryland low-voltage contractor.'
 colors:
   primary: '#006BD6'
-  rack-black: '#071018'
-  deep-navy: '#0A1930'
-  panel-steel: '#182534'
+  rack-black: '#102B40'
+  deep-navy: '#173F5F'
+  panel-steel: '#244E6E'
+  panel: '#19384F'
+  steel-mist: '#E4EEF6'
+  steel-mist-soft: '#F1F6FA'
+  chrome-ink: '#102438'
+  chrome-text: '#355269'
+  chrome-border: '#B6C9D8'
+  chrome-control-border: '#71879B'
+  chrome-blue: '#004F9F'
   action-blue: '#006BD6'
   signal-blue: '#0A84FF'
   signal-cyan: '#62C5FF'
   equipment-white: '#F6F9FC'
-  label-slate: '#A9B7C8'
-  error: '#FF6B6B'
+  muted-dark: '#B5C3D0'
+  error: '#FF8A8A'
 typography:
   display:
     fontFamily: 'Barlow Condensed, Arial Narrow, sans-serif'
@@ -33,17 +41,44 @@ components:
     backgroundColor: '{colors.action-blue}'
     textColor: '{colors.equipment-white}'
   navigation:
+    backgroundColor: '{colors.steel-mist}'
+    textColor: '{colors.chrome-ink}'
+  navigation-secondary:
+    textColor: '{colors.chrome-text}'
+  navigation-active:
+    textColor: '{colors.chrome-ink}'
+  navigation-marker:
+    backgroundColor: '{colors.action-blue}'
+  chrome-link:
+    textColor: '{colors.chrome-blue}'
+  chrome-divider:
+    backgroundColor: '{colors.chrome-border}'
+  chrome-control-outline:
+    backgroundColor: '{colors.chrome-control-border}'
+  focus-ring-dark:
+    backgroundColor: '{colors.signal-cyan}'
+  focus-ring-light:
+    backgroundColor: '{colors.chrome-blue}'
+  mobile-navigation:
+    backgroundColor: '{colors.steel-mist-soft}'
+    textColor: '{colors.chrome-text}'
+  hero:
     backgroundColor: '{colors.rack-black}'
-    textColor: '{colors.signal-cyan}'
+    textColor: '{colors.equipment-white}'
+  media-frame:
+    backgroundColor: '{colors.panel}'
+    textColor: '{colors.muted-dark}'
   service-panel:
     backgroundColor: '{colors.panel-steel}'
     textColor: '{colors.equipment-white}'
   form:
     backgroundColor: '{colors.deep-navy}'
-    textColor: '{colors.label-slate}'
-  mobile-quote-bar:
-    backgroundColor: '{colors.action-blue}'
     textColor: '{colors.equipment-white}'
+  form-secondary:
+    textColor: '{colors.muted-dark}'
+  mobile-quote-bar:
+    backgroundColor: '{colors.steel-mist}'
+    textColor: '{colors.chrome-ink}'
   cable-route:
     backgroundColor: '{colors.signal-blue}'
 ---
@@ -70,7 +105,7 @@ The site should feel like opening a clean telecom room after a disciplined insta
 
 ## Colors
 
-Rack Black and Deep Navy carry the page surfaces. Panel Steel separates equipment-bay sections. Action Blue is reserved for solid calls to action because it supports white text contrast; brighter Signal Blue and Signal Cyan are used for cable paths, focus, ticks, and short labels. The supplied transparent logo sits directly on dark header and footer surfaces without a white backing plate. Equipment White carries high-priority content. Label Slate is secondary copy only. Error is always paired with visible text and an icon or field state.
+Rack Black, Deep Navy, and Panel Steel are lifted into clearer blue-slate tones so dark sections retain their industrial character without feeling near-black. Steel Mist carries the header, footer, mobile navigation, and utility pages; the transparent black-and-blue logo sits directly on that light equipment-finish surface without a backing plate. Chrome Ink and Chrome Blue keep navigation and footer text readable on Steel Mist. Action Blue remains reserved for solid calls to action, while brighter Signal Blue and Signal Cyan are used for cable paths, focus, ticks, and short labels on dark surfaces. Equipment White carries high-priority content on dark sections, while Muted Dark supports secondary copy there. Focus rings use Signal Cyan on dark surfaces and Chrome Blue on light steel. Error is always paired with visible text and an icon or field state.
 
 ## Typography
 
@@ -92,7 +127,7 @@ Panels are nearly square with a 6px maximum radius. Buttons and inputs use 4px c
 
 ### Foundational visual states
 
-Every control has explicit default, hover, focus-visible, active, disabled, busy, success, and error treatment. Focus uses a high-contrast Signal Cyan outline. Busy states preserve control dimensions. Reduced motion removes path-drawing and reveal transforms while preserving content.
+Every control has explicit default, hover, focus-visible, active, disabled, busy, success, and error treatment. Focus uses a high-contrast Signal Cyan outline on dark surfaces and Chrome Blue on light steel. Busy states preserve control dimensions. Reduced motion removes path-drawing and reveal transforms while preserving content.
 
 ### Buttons and actions
 
