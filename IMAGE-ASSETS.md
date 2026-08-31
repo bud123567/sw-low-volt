@@ -19,3 +19,15 @@ Mode: built-in OpenAI image generation.
 - Web asset: `public/security-access-cabling.jpg`
 - Full-resolution source: `source-assets/security-access-cabling-original.png`
 - Prompt: Create a wide photorealistic commercial low-voltage installation scene focused on gloved technician hands terminating security and access-control cabling inside a clean rough-in panel. Include technically plausible low-voltage conductors, organized pathways, an enclosure, and subtle security-camera context in the background with shallow depth of field. Use restrained blue accents and realistic jobsite lighting. No faces, no brand names, no readable text, and no watermark. This is illustrative imagery and must not imply it is an actual SW Low Volt project.
+
+## Structured cabling detail
+
+- Web asset: `public/structured-cabling.jpg`
+- Full-resolution source: `source-assets/structured-cabling-original.png`
+- Prompt: Create a wide photorealistic close-up of an exceptionally clean commercial structured-cabling rack. Show black patch panels, realistic numbered ports, vivid blue Cat6 patch cables, proper horizontal and vertical cable management, consistent bend radii, and disciplined bundles. Use natural telecom-room lighting and technically plausible details. No people, no brands, no watermark, and no promotional text. This is illustrative imagery and must not imply it is an actual SW Low Volt project.
+
+## Commercial rough-in image
+
+- Web asset: `public/commercial-rough-in.jpg`
+- Full-resolution source: `source-assets/commercial-rough-in-original.png`
+- Prompt: Create a wide photorealistic commercial construction rough-in scene showing organized blue low-voltage cable pathways above open metal-stud walls. Include proper J-hooks or supports, neat parallel cable bundles, service loops at planned device locations, realistic ceiling utilities, and a clean active-jobsite atmosphere. No workers, brands, readable labels, or watermark. This is illustrative imagery and must not imply it is an actual SW Low Volt project.
