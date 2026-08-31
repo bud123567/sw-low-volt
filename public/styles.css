@@ -1,38 +1,38 @@
 @font-face {
-  font-family: "Barlow Condensed";
-  src: url("/fonts/barlow-condensed-800.ttf") format("truetype");
+  font-family: 'Barlow Condensed';
+  src: url('/fonts/barlow-condensed-800.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Barlow Condensed";
-  src: url("/fonts/barlow-condensed-700.ttf") format("truetype");
+  font-family: 'Barlow Condensed';
+  src: url('/fonts/barlow-condensed-700.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/fonts/source-sans-3-400.ttf") format("truetype");
+  font-family: 'Source Sans 3';
+  src: url('/fonts/source-sans-3-400.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/fonts/source-sans-3-600.ttf") format("truetype");
+  font-family: 'Source Sans 3';
+  src: url('/fonts/source-sans-3-600.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans 3";
-  src: url("/fonts/source-sans-3-700.ttf") format("truetype");
+  font-family: 'Source Sans 3';
+  src: url('/fonts/source-sans-3-700.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -60,9 +60,9 @@
   --gutter: clamp(1.25rem, 4vw, 4.5rem);
   --max-width: 90rem;
   --header-height: 5.5rem;
-  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
-  --body: "Source Sans 3", Arial, sans-serif;
-  --utility: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --display: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+  --body: 'Source Sans 3', Arial, sans-serif;
+  --utility: ui-monospace, 'SFMono-Regular', Consolas, monospace;
   --scrollbar-thumb: #3b526b;
   --scrollbar-track: #071018;
 }
@@ -198,7 +198,7 @@ textarea:disabled {
   width: 2rem;
   height: 1px;
   background: currentColor;
-  content: "";
+  content: '';
 }
 
 .eyebrow--dark {
@@ -261,7 +261,11 @@ textarea:disabled {
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+  transition:
+    background 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    transform 160ms ease;
 }
 
 .button:hover {
@@ -383,18 +387,18 @@ textarea:disabled {
 }
 
 .nav-link:hover,
-.nav-link[aria-current="page"] {
+.nav-link[aria-current='page'] {
   color: #fff;
 }
 
-.nav-link[aria-current="page"]::after {
+.nav-link[aria-current='page']::after {
   position: absolute;
   right: 0;
   bottom: 0.45rem;
   left: 0;
   height: 1px;
   background: var(--signal-cyan);
-  content: "";
+  content: '';
 }
 
 .header-actions {
@@ -415,7 +419,7 @@ textarea:disabled {
 
 .header-phone::before {
   color: var(--signal-cyan);
-  content: "☎";
+  content: '☎';
 }
 
 .mobile-menu-button {
@@ -455,12 +459,12 @@ textarea:disabled {
   font-size: 0.78rem;
 }
 
-.mobile-nav .nav-link[aria-current="page"] {
+.mobile-nav .nav-link[aria-current='page'] {
   border-left: 2px solid var(--signal-cyan);
   padding-left: 0.9rem;
 }
 
-.mobile-nav .nav-link[aria-current="page"]::after {
+.mobile-nav .nav-link[aria-current='page']::after {
   display: none;
 }
 
@@ -489,7 +493,7 @@ textarea:disabled {
     linear-gradient(rgba(98, 197, 255, 0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(98, 197, 255, 0.06) 1px, transparent 1px);
   background-size: 44px 44px;
-  content: "";
+  content: '';
 }
 
 .home-hero-grid {
@@ -539,7 +543,7 @@ textarea:disabled {
   z-index: -1;
   border: 1px solid rgba(10, 132, 255, 0.25);
   background: rgba(10, 132, 255, 0.05);
-  content: "";
+  content: '';
 }
 
 .frame-label {
@@ -626,7 +630,7 @@ textarea:disabled {
   width: 0.45rem;
   height: 0.45rem;
   background: #fff;
-  content: "";
+  content: '';
 }
 
 .cable-route {
@@ -644,7 +648,7 @@ textarea:disabled {
   position: absolute;
   background: var(--signal-blue);
   box-shadow: 0 0 18px rgba(10, 132, 255, 0.35);
-  content: "";
+  content: '';
 }
 
 .cable-route::before {
@@ -666,13 +670,21 @@ textarea:disabled {
 }
 
 @keyframes route-x {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 @keyframes route-y {
-  from { transform: scaleY(0); }
-  to { transform: scaleY(1); }
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
 }
 
 .trust-bar {
@@ -703,7 +715,7 @@ textarea:disabled {
 
 .trust-item::before {
   color: var(--signal-cyan);
-  content: "✓";
+  content: '✓';
 }
 
 .section {
@@ -861,7 +873,7 @@ textarea:disabled {
 
 .checklist li::before {
   color: var(--action-blue);
-  content: "●";
+  content: '●';
   font-size: 0.65rem;
   transform: translateY(0.35rem);
 }
@@ -967,7 +979,9 @@ textarea:disabled {
   background: #08131f;
   color: #fff;
   padding: 0.7rem 0.9rem;
-  transition: border-color 160ms ease, box-shadow 160ms ease;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease;
 }
 
 .field textarea {
@@ -990,9 +1004,9 @@ textarea:disabled {
   outline: 0;
 }
 
-.field input[aria-invalid="true"],
-.field select[aria-invalid="true"],
-.field textarea[aria-invalid="true"] {
+.field input[aria-invalid='true'],
+.field select[aria-invalid='true'],
+.field textarea[aria-invalid='true'] {
   border-color: var(--error);
 }
 
@@ -1091,7 +1105,9 @@ textarea:disabled {
   color: #fff;
   padding: 1.2rem;
   text-align: center;
-  transition: border-color 160ms ease, background 160ms ease;
+  transition:
+    border-color 160ms ease,
+    background 160ms ease;
 }
 
 .upload-zone:hover,
@@ -1334,7 +1350,7 @@ textarea:disabled {
 
 .scope-list li::before {
   color: var(--action-blue);
-  content: "✓";
+  content: '✓';
   font-weight: 700;
 }
 
@@ -1640,7 +1656,7 @@ textarea:disabled {
   justify-content: space-between;
   gap: 1rem;
   padding-block: 1.4rem;
-  color: #607080;
+  color: #8c9bad;
   font-size: 0.76rem;
 }
 
@@ -1882,6 +1898,7 @@ textarea:disabled {
     scroll-behavior: auto;
   }
 
+  /* Accessibility override: the user's reduced-motion preference must win over component motion. */
   *,
   *::before,
   *::after {

@@ -79,6 +79,8 @@
   function setFieldError(form, name, message) {
     const error = form.querySelector('[data-error-for="' + name + '"]');
     const control = findControl(form, name);
+    const visibleControl =
+      name === 'plans' ? form.querySelector('[data-upload-zone]') : null;
     if (error) error.textContent = message;
 
     if (control instanceof RadioNodeList) {
@@ -88,6 +90,10 @@
       });
     } else if (control instanceof HTMLElement) {
       control.setAttribute('aria-invalid', message ? 'true' : 'false');
+    }
+
+    if (visibleControl instanceof HTMLElement) {
+      visibleControl.setAttribute('aria-invalid', message ? 'true' : 'false');
     }
   }
 

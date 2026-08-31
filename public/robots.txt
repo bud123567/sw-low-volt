@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sw-low-volt.amused-pike-8012.chatgpt.site/sitemap.xml
