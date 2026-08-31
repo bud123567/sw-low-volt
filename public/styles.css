@@ -244,6 +244,13 @@ textarea:disabled {
   color: var(--body-slate);
 }
 
+.image-note {
+  margin: 1rem 0 0;
+  color: #52606d;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
 .button {
   display: inline-flex;
   min-height: 3.25rem;
@@ -759,21 +766,52 @@ textarea:disabled {
 }
 
 .services-grid {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.service-card:nth-child(-n + 2) {
+  grid-column: span 3;
+}
+
+.service-card:nth-child(n + 3) {
+  grid-column: span 2;
 }
 
 .service-card {
   display: flex;
-  min-height: 23rem;
+  min-height: 31rem;
+  overflow: hidden;
   flex-direction: column;
   border-right: 1px solid var(--line-light);
   border-bottom: 1px solid var(--line-light);
-  padding: 2rem 1.65rem;
+  padding: 0 1.65rem 2rem;
   transition: background 160ms ease;
 }
 
 .service-card:hover {
   background: #eef6ff;
+}
+
+.service-card-media {
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  margin: 0 -1.65rem;
+  background: var(--panel-steel);
+}
+
+.service-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    filter 180ms ease,
+    transform 180ms ease;
+}
+
+.service-card:hover .service-card-media img,
+.service-card:focus-visible .service-card-media img {
+  filter: saturate(1.08) contrast(1.03);
+  transform: scale(1.025);
 }
 
 .service-code,
@@ -795,10 +833,11 @@ textarea:disabled {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
 .card-title {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   font-size: 2rem;
   line-height: 0.95;
 }
@@ -1114,6 +1153,10 @@ textarea:disabled {
 .upload-zone.is-dragging {
   border-color: var(--signal-cyan);
   background: rgba(10, 132, 255, 0.06);
+}
+
+.upload-zone[aria-invalid='true'] {
+  border-color: var(--error);
 }
 
 .upload-zone strong {
@@ -1712,9 +1755,17 @@ textarea:disabled {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .service-card:nth-child(n) {
+    grid-column: auto;
+  }
+
   .service-card:last-child {
     grid-column: span 2;
     min-height: 18rem;
+  }
+
+  .service-card:last-child .service-card-media {
+    aspect-ratio: 3 / 1;
   }
 
   .expectation-grid {
@@ -1856,6 +1907,10 @@ textarea:disabled {
   .service-card:last-child {
     grid-column: auto;
     min-height: 20rem;
+  }
+
+  .service-card:last-child .service-card-media {
+    aspect-ratio: 16 / 9;
   }
 
   .scope-list li:nth-child(odd) {

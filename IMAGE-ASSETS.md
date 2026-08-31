@@ -31,3 +31,11 @@ Mode: built-in OpenAI image generation.
 - Web asset: `public/commercial-rough-in.jpg`
 - Full-resolution source: `source-assets/commercial-rough-in-original.png`
 - Prompt: Create a wide photorealistic commercial construction rough-in scene showing organized blue low-voltage cable pathways above open metal-stud walls. Include proper J-hooks or supports, neat parallel cable bundles, service loops at planned device locations, realistic ceiling utilities, and a clean active-jobsite atmosphere. No workers, brands, readable labels, or watermark. This is illustrative imagery and must not imply it is an actual SW Low Volt project.
+
+## Wi-Fi access-point image
+
+- Web asset: `public/wifi-access-point.jpg`
+- Full-resolution source: `source-assets/wifi-access-point-original.png`
+- Prompt: Create a wide photorealistic commercial low-voltage installation scene focused on a technician's hands connecting and terminating Cat6 cabling at a ceiling-mounted Wi-Fi access point. Show a clean commercial ceiling, a realistic cable pathway, and technically plausible installation details. No faces, brand names, readable text, or watermark. This is illustrative imagery and must not imply it is an actual SW Low Volt project.
+
+The `-960.jpg` image files are delivery-optimized derivatives of their corresponding generated source images. `public/sw-low-volt-logo-400.webp` is an optimized derivative of the user-supplied logo, not an AI-generated asset.
