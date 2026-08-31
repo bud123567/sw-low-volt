@@ -359,13 +359,13 @@ textarea:disabled {
   width: 12.25rem;
   height: 3.5rem;
   align-items: center;
-  background: #fff;
+  background: transparent;
   padding: 0.35rem 0.75rem;
-  transition: background 160ms ease;
+  transition: filter 160ms ease;
 }
 
 .brand-plate:hover {
-  background: #eef6ff;
+  filter: brightness(1.12);
 }
 
 .brand-plate img {
@@ -1638,7 +1638,7 @@ textarea:disabled {
 
 .footer-logo {
   width: 13rem;
-  background: #fff;
+  background: transparent;
   padding: 0.65rem 1rem;
 }
 

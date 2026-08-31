@@ -70,7 +70,7 @@ The site should feel like opening a clean telecom room after a disciplined insta
 
 ## Colors
 
-Rack Black and Deep Navy carry the page surfaces. Panel Steel separates equipment-bay sections. Action Blue is reserved for solid calls to action because it supports white text contrast; brighter Signal Blue and Signal Cyan are used for cable paths, focus, ticks, and short labels. Equipment White carries the supplied dark logo and high-priority content. Label Slate is secondary copy only. Error is always paired with visible text and an icon or field state.
+Rack Black and Deep Navy carry the page surfaces. Panel Steel separates equipment-bay sections. Action Blue is reserved for solid calls to action because it supports white text contrast; brighter Signal Blue and Signal Cyan are used for cable paths, focus, ticks, and short labels. The supplied transparent logo sits directly on dark header and footer surfaces without a white backing plate. Equipment White carries high-priority content. Label Slate is secondary copy only. Error is always paired with visible text and an icon or field state.
 
 ## Typography
 
