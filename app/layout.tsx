@@ -9,20 +9,20 @@ export const metadata: Metadata = {
     template: '%s | SW Low Volt',
   },
   description:
-    'Structured cabling, network infrastructure, and security and access cabling for commercial, residential, and subcontract projects across Maryland and Delmarva.',
+    'Structured cabling, network infrastructure, and security and access cabling for commercial, residential, and subcontract projects throughout Maryland.',
   keywords: [
     'low voltage contractor Maryland',
     'structured cabling Maryland',
     'network cabling Ocean City MD',
     'Cat6 installation Maryland',
-    'commercial cabling contractor Delmarva',
+    'commercial cabling contractor Maryland',
   ],
   openGraph: {
     type: 'website',
     siteName: 'SW Low Volt',
     title: 'Low-Voltage Contractor in Maryland | SW Low Volt',
     description:
-      'Structured cabling, network infrastructure, security cabling, and connectivity solutions across Maryland, Delmarva, and nearby Pennsylvania areas.',
+      'Structured cabling, network infrastructure, security cabling, and connectivity solutions throughout Maryland.',
     images: [
       {
         url: '/og.jpg',

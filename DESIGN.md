@@ -94,7 +94,7 @@ The site should feel like opening a clean telecom room after a disciplined insta
 ### Product context and register
 
 - **Audience and primary job:** General contractors, facilities teams, businesses, property managers, schools, municipalities, and homeowners need to verify fit quickly, call, request a quote, or invite SW Low Volt to bid.
-- **Target market and evidence:** Maryland, Delmarva, Glen Burnie, Pasadena, Ocean City, Berlin, Ocean Pines, Salisbury, and nearby Pennsylvania areas, exactly as supplied in the business brief.
+- **Target market and evidence:** Maryland, including Glen Burnie, Pasadena, Ocean City, Berlin, Ocean Pines, and Salisbury, as confirmed by the current business scope.
 - **Locale and language policy:** English (US), direct and trade-literate without unnecessary jargon.
 - **Usage scene:** Mobile-first for urgent calls and field review; desktop for scope review and plan/spec submission.
 - **Register:** Brand site with functional lead forms.
